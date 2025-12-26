@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>من سبق لبق 🎯</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Home Page -->
+    <div id="homePage" class="page active">
+        <div class="container">
+            <!-- Game Title -->
+            <div class="game-title">
+                <h1>من سبق لبق 🎯</h1>
+            </div>
+
+            <!-- Start Button -->
+            <div class="start-section">
+                <button id="startBtn" class="btn-main">
+                    <span class="btn-icon">▶</span>
+                    ابدأ اللعب
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Categories Page -->
+    <div id="categoriesPage" class="page">
+        <div class="container">
+            <!-- Back Button -->
+            <button id="backToHomeBtn" class="btn-back">
+                ← القائمة الرئيسية
+            </button>
+
+            <!-- Categories Grid -->
+            <div class="categories-grid">
+                <div class="category-card" data-category="دول">
+                    <div class="category-icon">🌍</div>
+                    <div class="category-name">دول</div>
+                </div>
+                <div class="category-card" data-category="يوتيوبرز">
+                    <div class="category-icon">📹</div>
+                    <div class="category-name">يوتيوبرز</div>
+                </div>
+                <div class="category-card" data-category="ألعاب">
+                    <div class="category-icon">🎮</div>
+                    <div class="category-name">ألعاب</div>
+                </div>
+                <div class="category-card" data-category="لغات">
+                    <div class="category-icon">🗣️</div>
+                    <div class="category-name">لغات</div>
+                </div>
+                <div class="category-card" data-category="مطاعم">
+                    <div class="category-icon">🍽️</div>
+                    <div class="category-name">مطاعم</div>
+                </div>
+                <div class="category-card" data-category="براندات عالمية">
+                    <div class="category-icon">🏢</div>
+                    <div class="category-name">براندات عالمية</div>
+                </div>
+                <div class="category-card" data-category="لهجات">
+                    <div class="category-icon">🗣️</div>
+                    <div class="category-name">لهجات</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Game Start Page -->
+    <div id="gameStartPage" class="page">
+        <div class="container">
+            <!-- Back Button -->
+            <button id="backToCategoriesBtn" class="btn-back">
+                ← القائمة الرئيسية
+            </button>
+
+            <!-- Ready Button -->
+            <div class="ready-section">
+                <button id="readyBtn" class="btn-ready">
+                    بدينا؟
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Questions Page -->
+    <div id="questionsPage" class="page">
+        <div class="container">
+            <!-- Back Button -->
+            <button id="backToCategoriesBtn2" class="btn-back">
+                ← القائمة الرئيسية
+            </button>
+
+            <!-- Question Counter -->
+            <div class="question-counter">
+                <span id="currentQuestion">1</span> / 7
+            </div>
+
+            <!-- Question Text -->
+            <div class="question-section">
+                <h2 id="questionText">السؤال هنا</h2>
+            </div>
+
+            <!-- Answer Options -->
+            <div class="answers-section">
+                <button class="answer-btn" data-option="0"></button>
+                <button class="answer-btn" data-option="1"></button>
+                <button class="answer-btn" data-option="2"></button>
+                <button class="answer-btn" data-option="3"></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Game Over Page -->
+    <div id="gameOverPage" class="page">
+        <div class="container">
+            <!-- Game Over Message -->
+            <div class="game-over-section">
+                <h2>انتهت اللعبة!</h2>
+                <p>شكراً للمشاركة</p>
+                <button id="playAgainBtn" class="btn-main">
+                    العب مرة أخرى
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Countdown Overlay -->
+    <div id="countdownOverlay" class="countdown-overlay">
+        <div class="countdown-number">3</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
